@@ -1,0 +1,180 @@
+html, body {
+    width: 100%;
+    /* height: 100%; */
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+body, header, section:nth-of-type(odd) {
+    background-color: #254117;
+}
+
+:root {
+    font-family: "Vollkorn";
+    font-size: 1em;
+    color: white;
+}
+@media (max-width: 1024px) {
+    :root {
+        /* font-size: 1em; */
+    }
+}
+
+p, a {
+    color: white;
+}
+
+header, section {
+    padding: 40px;
+}
+
+
+/* Menu */
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header h1, header a {
+    font-size: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+h2, header a:hover, header a:active, header a:focus {
+    font-weight: bold;
+}
+
+.desktop-menu, .desktop-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu, .desktop-pages {
+    display: flex;
+}
+
+.desktop-menu {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-pages li:not(:first-of-type) {
+    margin-left: 20px;
+}
+
+.social-medias img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Sections */
+
+section, section div {
+    display: flex;
+}
+
+section {
+    justify-content: center;
+}
+
+section:not(:first-of-type) {
+    padding: 75px 40px;
+}
+
+section:nth-of-type(even) {
+    background-color: white;
+}
+
+section:nth-of-type(odd) h2 {
+    color: white;
+}
+
+section:nth-of-type(even) h2 {
+    color: #254117;
+}
+
+section div {
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Home */
+
+#home {
+    padding: 40px 40px 75px 40px;
+}
+
+#home img {
+    width: 600px;
+}
+
+#home .sun {
+    font-size: 4rem;
+    margin: 75px;
+}
+
+#home div p {
+    margin: 0;
+    text-align: center;
+}
+
+#home .activity-main {
+    margin-bottom: 75px;
+}
+
+#home .activity-main p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#home .activity-details div p {
+    font-size: 1.5rem;
+}
+
+#home .activity-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home .activity-details div {
+    width: 300px;
+}
+
+
+/* fonts */
+
+@font-face {
+	font-family: "Vollkorn";
+	src: url("../fonts/vollkorn-regular.woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: "Vollkorn Italic";
+	src: url("../fonts/vollkorn-italic.woff2");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: "Vollkorn Bold";
+	src: url("../fonts/vollkorn-bold.woff2");
+    font-style: normal;
+    font-weight: bold;
+}
