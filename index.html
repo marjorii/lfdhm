@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <title>La Ferme du Haut Mont</title>
-    <!-- <link rel="icon" type="image/png" href="images/name.png" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="La Ferme du Haut Mont cultive des légumes et des fruits de saison qu'elle vend au détail ou en paniers hebdomadaires. Elle propose également des produits d'épicerie locale. Elle est implantée dans la commune de Trémonzey (88240) dans les Vosges du sud.">
+    <meta name="keywords" content="La Ferme du Haut Mont, la ferme du haut mont, ferme, Haut Mont, Trémonzey, trémonzey, tremonzey, Vosges, vosges, maraîchage, agriculture, agriculture paysanne, légumes, fruits, épicerie, épicerie locale">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="style/style.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -12,24 +16,18 @@
 
     <header>
         <nav>
-            <ul class="desktop-menu">
-                <li>
-                    <h1>La Ferme du Haut Mont</h1>
-                </li>
-                <li>
-                    <ul class="desktop-pages">
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#news">Actualités</a></li>
-                        <li><a href="#outlets">Points de vente</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="social-medias">
-                        <li><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook" /></a></li>
-                    </ul>
-                </li>
+            <h1>La Ferme du Haut Mont</h1>
+            <button type="button" id="menu-button" class="mobile" aria-label="Menu" aria-expanded="false"><img src="images/menu.svg" alt="Icône du menu" /></button>
+            <ul class="pages hide">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#news">Actualités</a></li>
+                <li><a href="#outlets">Points de vente</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="mobile social-medias"><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook" /></a></li>
+            </ul>
+            <ul class="desktop social-medias">
+                <li><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook" /></a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +45,7 @@
 
             <div class="activity-details">
                 <div>
-                    <p>Vente au détail de légumes de saisons, vente de paniers herbdomadaires</p>
+                    <p>Vente au détail de légumes de saisons, vente de paniers hebdomadaires</p>
                 </div>
                 <div>
                     <p>Épicerie locale les samedis matin à La Ferme du Haut Mont</p>
@@ -58,11 +56,60 @@
     </section>
 
     <section id="about">
-        <h2>À propos</h2>
+        <div>
+            <h2>À propos</h2>
+
+            <div class="text-container">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="images/youri.JPG" alt="Photographie de Youri Ravachol" />
+            </div>
+
+        </div>
     </section>
 
     <section id="news">
-        <h2>Actualités</h2>
+        <div>
+            <h2>Actualités</h2>
+
+            <div id="gallery-container">
+                <div id="gallery">
+                    <figure>
+                        <img src="images/opening.svg" alt="Visuel annonçant l'ouverture de La Ferme du Haut Mont le samedi 11 juin 2022 de 9h à 13h, mention textuelle et émoji avec deux verres qui trinquent." />
+                    </figure>
+                    <figure>
+                        <img src="images/serre.jpg" alt="Photographie de la serre de La Ferme du Haut Mont." />
+                        <figcaption>Notre belle serre qui rayonne sous le soleil ☼ et maintient à bonne température les jeunes pousses.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/semis.jpg" alt="Photographie de semis de laitue sous serre." />
+                        <figcaption>Les semis poussent bien...</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/pois.jpg" alt="Photographie de pois mis en terre en planche." />
+                        <figcaption>...et les pois mis en terre se portent à merveille ☻ !</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div id="gallery-buttons-container">
+                <button type="button" aria-label="Naviguer vers les contenus précédents." disabled><</button>
+                <button type="button" aria-label="Naviguer vers les contenus suivants.">></button>
+            </div>
+
+
+            <div class="emphasize"><p>Retrouvez toutes nos actualités <br>sur <a href="#" target="_blank" aria-label="Voir la page Facebook">Facebook</a> !<p></div>
+
+        </div>
     </section>
 
     <section id="outlets">
