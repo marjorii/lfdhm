@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1920"
+   height="1093.408"
+   viewBox="0 0 507.99999 289.29754"
+   version="1.1"
+   id="svg3227"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="hill.svg">
+  <defs
+     id="defs3221">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3577">
+      <rect
+         clip-path="none"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.56167275"
+         id="rect3579"
+         width="508.86771"
+         height="257.0184"
+         x="-0.5"
+         y="2287.3193" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3577-3">
+      <rect
+         clip-path="none"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.56167275"
+         id="rect3579-6"
+         width="508.86771"
+         height="257.0184"
+         x="-0.5"
+         y="2287.3193" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24172087"
+     inkscape:cx="55.930925"
+     inkscape:cy="79.316245"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-page="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1171"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3224">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-7.7024567)">
+    <rect
+       y="7.7024293"
+       x="-0.43385315"
+       height="289.29758"
+       width="508.86771"
+       id="rect6089"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.59590036"
+       clip-path="none" />
+    <g
+       id="g3806"
+       transform="translate(-0.43385315,4.1144173e-5)">
+      <path
+         transform="translate(0.5,-2247.3378)"
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6091"
+         d="m 641.55487,2552.8505 -662.39907,-8.0168 -0.04464,-168.6033 c 13.67748,6.3859 62.28369,27.3659 108.40266,17.6131 9.73081,-2.604 20.70338,-1.9072 88.11564,-36.744 7.62798,-4.1781 70.71971,-40.2937 131.57156,-4.9339 22.39652,14.7799 90.16729,54.7964 126.91173,61.1259 0,0 23.04277,4.2242 51.45158,3.1493 0,0 53.65186,2.9235 155.40905,-47.8582 z"
+         style="opacity:1;vector-effect:none;fill:#254117;fill-opacity:1;stroke:#254117;stroke-width:2.60892963;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         clip-path="url(#clipPath3577)" />
+      <path
+         style="display:inline;opacity:1;fill:#254117;fill-opacity:1;stroke:#254117;stroke-width:1.0417285;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 228.73991,92.058489 V 79.036588 h -3.12521 l 4.42734,-7.2918 h 41.66915 l 4.42735,7.2918 h -3.1252 v 13.021901 z"
+         id="path6093"
+         inkscape:connector-curvature="0"
+         clip-path="none" />
+    </g>
+  </g>
+</svg>

@@ -43,6 +43,7 @@ showMenu(menu);
 
 window.addEventListener('resize', () => {
     showMenu(menu);
+    paginationSwitch()
 });
 
 
@@ -54,19 +55,24 @@ const paginationButtons = Array.from(document.querySelectorAll('#gallery-buttons
 const prev = paginationButtons[0];
 const next = paginationButtons[1];
 const gallery = document.getElementById('gallery');
+const figureWidth = gallery.firstElementChild.offsetWidth + 40;
 
 /* To fix */
 paginationButtons.forEach((button) => {
    button.onclick = () => {
        // Next button
        if (button == next) {
-           // Disable next button if no more content to scroll
-           if (gallery.scrollLeft >= (gallery.scrollWidth - gallery.offsetWidth) - gallery.offsetWidth) {
+
+           let nextLeftSpace = gallery.scrollLeftMax - (gallery.scrollLeft + figureWidth);
+           if (nextLeftSpace < figureWidth) {
+               gallery.scrollBy(gallery.scrollLeftMax, 0);
                next.disabled = true;
            }
-           // Scroll left
-           gallery.scrollBy(gallery.offsetWidth + 15, 0);
 
+           else {
+               // Scroll left
+               gallery.scrollBy(figureWidth, 0);
+           }
            // Active prev button if left scroll
            if (gallery.scrollLeft > 0) {
                prev.disabled = false;
@@ -74,22 +80,26 @@ paginationButtons.forEach((button) => {
        }
        // Prev button
        else {
-           // Active next button if content to scroll
-           if (gallery.scrollLeft < gallery.scrollWidth) {
-               next.disabled = false;
-           }
-           // Disable prev button if no more content to scroll
-           if (gallery.scrollLeft <= (gallery.offsetWidth)) {
+           let nextLeftSpace = gallery.scrollLeft - figureWidth;
+           if (nextLeftSpace < figureWidth) {
+               // Scroll right
+               gallery.scrollTo(0, 0)
                prev.disabled = true;
            }
-
-           // Scroll right
-           gallery.scrollBy(- gallery.offsetWidth - 15, 0);
+           else {
+              gallery.scrollBy(-figureWidth, 0);
+           }
+           // Active next button if content to scroll
+           if (gallery.scrollLeft < gallery.scrollLeftMax) {
+               next.disabled = false;
+           }
 
        }
-       // console.log('offsetWidth: ', gallery.offsetWidth, 'scrollWidth: ', gallery.scrollWidth, 'scrollWidth - offsetWidth: ', gallery.scrollWidth - gallery.offsetWidth, 'scrollLeft: ', gallery.scrollLeft);
    }
 });
+
+paginationSwitch()
+
 
 
 function paginationSwitch() {

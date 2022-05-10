@@ -17,26 +17,26 @@
     <header>
         <nav>
             <h1>La Ferme du Haut Mont</h1>
-            <button type="button" id="menu-button" class="mobile" aria-label="Menu" aria-expanded="false"><img src="images/menu.svg" alt="Icône du menu" /></button>
+            <button type="button" id="menu-button" class="mobile" aria-label="Menu" aria-expanded="false"><img src="images/menu.svg" alt="Icône du menu." /></button>
             <ul class="pages hide">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#news">Actualités</a></li>
                 <li><a href="#outlets">Points de vente</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="mobile social-medias"><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook" /></a></li>
+                <li class="mobile social-medias"><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook." /></a></li>
             </ul>
             <ul class="desktop social-medias">
-                <li><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook" /></a></li>
+                <li><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook." /></a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home">
         <div>
-            <img src="images/logo2.svg" alt="Logotype de La Ferme du Haut Mont" />
+            <img src="images/logo2.svg" alt="Logotype de La Ferme du Haut Mont." />
 
-            <p class="sun">☼</p>
+            <p class="sun" aria-hidden="true">☼</p>
 
             <div class="activity-main">
                 <p>Maraîchage diversifié</p>
@@ -88,7 +88,7 @@
                     </figure>
                     <figure>
                         <img src="images/serre.jpg" alt="Photographie de la serre de La Ferme du Haut Mont." />
-                        <figcaption>Notre belle serre qui rayonne sous le soleil ☼ et maintient à bonne température les jeunes pousses.</figcaption>
+                        <figcaption>Notre belle serre qui rayonne sous le soleil <span aria-hidden="true">☼</span> et maintient à bonne température les jeunes pousses.</figcaption>
                     </figure>
                     <figure>
                         <img src="images/semis.jpg" alt="Photographie de semis de laitue sous serre." />
@@ -107,17 +107,94 @@
             </div>
 
 
-            <div class="emphasize"><p>Retrouvez toutes nos actualités <br>sur <a href="#" target="_blank" aria-label="Voir la page Facebook">Facebook</a> !<p></div>
+            <div class="emphasize"><p>Retrouvez toutes nos actualités <br>sur <a href="#" target="_blank">Facebook</a> !<p></div>
 
         </div>
     </section>
 
     <section id="outlets">
-        <h2>Points de vente</h2>
+        <div>
+            <h2>Points de vente</h2>
+
+            <ul>
+                <li><span aria-hidden="true">☼</span><span class="strong"> Marché de Bains-les-Bains</span> les vendredis matin de 8h à 12h</li>
+                <li><span aria-hidden="true">☼</span><span class="strong"> Épicerie locale</span> à La Ferme du Haut Mont les samedis matin de 9h à 12h</li>
+                <li>
+                    <span aria-hidden="true">☼</span><span class="strong"> Panier hebdomadaire de légumes</span> (10€ équivalent 2 personnes) :
+                    <ul>
+                        <li><span aria-hidden="true">→</span> À récupérer à La Ferme du Haut Mont les samedis matin de 9h à 12h</li>
+                        <li><span aria-hidden="true">→</span> En livraison les vendredis de 16h à 20h</li>
+                    </ul>
+                    Inscription par mail à l'adresse <span class="strong">lafermeduhautmon [at] mailo [point] com</span> ou par téléphone au <span class="strong">06 31 42 87 87</strong>
+                </li>
+            </ul>
+
+            <div id="landscape-container"><img src="images/outlets.svg" alt="Schéma des points de vente." /></div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <div>
+            <h2>Contact</h2>
+
+            <div>
+                <div>
+                    <img src="images/logo.svg" alt="Logotype de La Ferme du Haut Mont." />
+                </div>
+
+                <address>
+                    <p class="strong">La Ferme du Haut Mont </p>
+                    <p>11, route des Arsondieux </p>
+                    <p>88240 Trémonzey </p>
+                    <p>06 31 42 87 87</p>
+                </address>
+
+                <address>
+                    <p class="strong">lafermeduhautmont [at] mailo [point] com</p>
+                </address>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="map">
+        <div>
+            <img src="images/hill.svg" alt="Illustration vectorielle d'une petite ferme sur une colline, reprise depuis le logotype." />
+        </div>
+        <div>
+            <div id="map-container">
+                <img src="images/map.svg" alt="Image d'une carte qui localise la Ferme du Haut Mont." />
+            </div>
+            <p>Voir la carte sur <a href="https://www.openstreetmap.org/way/243687273#map=16/47.9687/6.2426" target="_blank">OpenStreetMap</a></p>
+        </div>
+    </section>
+
+    <section id="credits">
+        <div>
+            <h2>Crédits</h2>
+
+            <div>
+                <dl>
+                    <dt>Photographies :</dt>
+                    <dd>© La Ferme du Haut Mont</dd>
+
+                    <dt>Fonte :</dt>
+                    <dd>Vollkorn (2006) par Friedrich Althausen</dd>
+
+                    <dt>Conception graphique et développement :</dt>
+                    <dd>Marjorie Ober et Nicolas Chesnais</dd>
+                </dl>
+                <p>La Ferme du Haut Mont, 2022</p>
+            </div>
+
+            <a href="#">Mentions légales</a>
+
+            <div>
+                <img src="images/banner.svg" alt="Logotype de la Ferme du Haut Mont intégré dans un bandeau qui prolonge le décor." />
+            </div>
+
+        </div>
+
     </section>
 
     <script src="script/script.js" ></script>
