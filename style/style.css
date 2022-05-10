@@ -497,21 +497,35 @@ section > div {
 #map {
     padding: 0;
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
+    flex-direction: column;
 }
 
-#map > div {
+@media (min-width: 767px) {
+    #map {
+        margin-bottom: 75px;
+    }
+}
+
+#map > div, #map > div img {
     width: 100%;
 }
 
 #map > div:first-of-type {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 #map > div + div {
-    position: absolute;
-    top: 400px;
+    position: relative;
+    margin-top: -20vw;
+}
+
+@media (min-width: 767px) {
+    #map > div + div {
+        margin-top: -30vw;
+    }
 }
 
 #map-container {
@@ -535,7 +549,7 @@ section#map:nth-of-type(2n) p, section#map:nth-of-type(2n) a {
 }
 
 section#map:nth-of-type(2n) p {
-    margin: 75px 40px;
+    margin: 75px 40px 0 40px;
 }
 
 section#map:nth-of-type(2n), #credits {
@@ -548,8 +562,19 @@ section#map:nth-of-type(2n), #credits {
     width: 100%;
 }
 
+#credits div div:first-of-type {
+    margin-bottom: 75px;
+}
+
 #credits div div:last-of-type {
-    margin-top: 75px;
+    margin-top: 160px;
+    display: none;
+}
+
+@media (min-width: 767px) {
+    #credits div div:last-of-type {
+        display: block;
+    }
 }
 
 #credits img {
