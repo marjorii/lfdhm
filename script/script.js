@@ -27,6 +27,9 @@ menuItems.forEach((item) => {
                 i.classList.remove('current');
             }
         });
+        if (window.innerWidth < 1250) {
+            menu.classList.add('hide');
+        }
         item.classList.add('current');
     });
 });
@@ -34,7 +37,7 @@ menuItems.forEach((item) => {
 /* Handle mobile button (on click) */
 
 menuButton.onclick = (e) => {
-    e.target.nextElementSibling.classList.toggle('hide');
+    e.target.parentElement.parentElement.nextElementSibling.firstElementChild.classList.toggle('hide');
 }
 
 /* Remove hide class on pages items if desktop */
@@ -125,7 +128,7 @@ function paginationSwitch() {
 /* Functions */
 
 function showMenu(menu) {
-    if (window.innerWidth > 1100) {
+    if (window.innerWidth > 1250) {
         menu.classList.remove('hide');
     }
     else {

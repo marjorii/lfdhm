@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
     <title>La Ferme du Haut Mont</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="La Ferme du Haut Mont cultive des légumes et des fruits de saison qu'elle vend au détail ou en paniers hebdomadaires, au marché de Bains-les-Bains ou à l'épicerie locale de la ferme. Elle est implantée dans la commune de Trémonzey (88240) dans les Vosges du sud.">
     <meta name="keywords" content="La Ferme du Haut Mont, la ferme du haut mont, ferme, Haut Mont, Trémonzey, trémonzey, tremonzey, Vosges, vosges, maraîchage, agriculture, agriculture paysanne, légumes, fruits, épicerie, épicerie locale">
     <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -16,19 +16,29 @@
 
     <header>
         <nav>
-            <h1>La Ferme du Haut Mont</h1>
-            <button type="button" id="menu-button" class="mobile" aria-label="Menu" aria-expanded="false"><img src="images/menu.svg" alt="Icône du menu." /></button>
-            <ul class="pages hide">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#news">Actualités</a></li>
-                <li><a href="#outlets">Points de vente</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="mobile social-medias"><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook." /></a></li>
+            <ul>
+                <li>
+                    <h1>La Ferme du Haut Mont</h1>
+                </li>
+                <li>
+                    <button type="button" id="menu-button" class="mobile" aria-label="Menu" aria-expanded="false"><img src="images/menu.svg" alt="Icône du menu." /></button>
+                </li>
+                <li class="desktop">
+                    <ul class="social-medias">
+                        <li><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook." /></a></li>
+                    </ul>
+                </li>
             </ul>
-            <ul class="desktop social-medias">
-                <li><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook." /></a></li>
-            </ul>
+            <div>
+                <ul class="pages hide">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#news">Actualités</a></li>
+                    <li><a href="#outlets">Points de vente</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="mobile social-medias"><a href="#" target="_blank" aria-label="Voir la page Facebook"><img src="images/fb.svg" alt="Icône Facebook." /></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -36,7 +46,9 @@
         <div>
             <img src="images/logo2.svg" alt="Logotype de La Ferme du Haut Mont." />
 
-            <p class="sun" aria-hidden="true">☼</p>
+            <div class="sun" aria-hidden="true">
+                <img src="images/sun-white.svg" alt="Image d'un petit soleil" />
+            </div>
 
             <div class="activity-main">
                 <p>Maraîchage diversifié</p>
@@ -122,7 +134,7 @@
 
             <div class="img-container">
                 <img src="photos/photo15.jpeg" alt="Amis préparant les supports de pieds de tomate sous la serre">
-                <img src="photos/photo15.jpeg" alt="Grand groupe d&#39;amis tendant la bâche de toit">
+                <!-- <img src="photos/photo15.jpeg" alt="Grand groupe d&#39;amis tendant la bâche de toit"> -->
             </div>
         </div>
     </section>
@@ -154,15 +166,28 @@
             <h2>Points de vente</h2>
 
             <ul>
-                <li><span aria-hidden="true">☼</span><span class="strong"> Marché de Bains-les-Bains</span> les vendredis matin de 8h à 12h</li>
-                <li><span aria-hidden="true">☼</span><span class="strong"> Épicerie locale</span> à La Ferme du Haut Mont les samedis matin de 9h à 12h</li>
                 <li>
-                    <span aria-hidden="true">☼</span><span class="strong"> Panier hebdomadaire de légumes</span> (10€ équivalent 2 personnes) :
+                    <div class="sun" aria-hidden="true">
+                        <img src="images/sun.svg" alt="Image d'un petit soleil" />
+                    </div>
+                    <p><span class="strong"> Marché de Bains-les-Bains</span> les vendredis matin de 8h à 12h</p>
+                </li>
+                <li>
+                    <div class="sun" aria-hidden="true">
+                            <img src="images/sun.svg" alt="Image d'un petit soleil" />
+                    </div>
+                    <p><span class="strong"> Épicerie locale</span> à La Ferme du Haut Mont les samedis matin de 9h à 12h</p>
+                </li>
+                <li>
+                    <div class="sun" aria-hidden="true">
+                        <img src="images/sun.svg" alt="Image d'un petit soleil" />
+                    </div>
+                    <p><span class="strong"> Panier hebdomadaire de légumes</span> (10€ équivalent 2 personnes) :</p>
                     <ul>
                         <li><span aria-hidden="true">→</span> À récupérer à La Ferme du Haut Mont les samedis matin de 9h à 12h</li>
                         <li><span aria-hidden="true">→</span> En livraison les vendredis de 16h à 20h</li>
                     </ul>
-                    Inscription par mail à l'adresse <span class="strong">lafermeduhautmon [at] mailo [point] com</span> ou par téléphone au <span class="strong">06 31 42 87 87</strong>
+                    <p>Inscription par mail à l'adresse <span class="strong">lafermeduhautmon [at] mailo [point] com</span> ou par téléphone au <span class="strong">06 31 42 87 87</span></p>
                 </li>
             </ul>
 
@@ -224,7 +249,7 @@
                 <p>La Ferme du Haut Mont, 2022</p>
             </div>
 
-            <a href="#">Mentions légales</a>
+            <!-- <a href="#">Mentions légales</a> -->
 
             <div>
                 <img src="images/banner.svg" alt="Logotype de la Ferme du Haut Mont intégré dans un bandeau qui prolonge le décor." />

@@ -30,8 +30,15 @@ header, section {
 
 section a {
     text-decoration-style: dotted;
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 3px;
 }
+
+@media (min-width: 767px) {
+    section a {
+        text-decoration-thickness: 5px;
+    }
+}
+
 
 section a:hover, section a:focus, section a:active, section:nth-of-type(2n+1) a:hover, section:nth-of-type(2n+1) a:focus, section:nth-of-type(2n+1) a:active {
     color: #ff8040 !important;
@@ -44,7 +51,7 @@ section a:hover, section a:focus, section a:active, section:nth-of-type(2n+1) a:
     display: none;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1250px) {
     .desktop {
         display: block;
     }
@@ -75,16 +82,33 @@ h2, header a:hover, header a:active, header a:focus {
     font-weight: bold;
 }
 
-header nav {
+header nav > ul:first-of-type {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media(max-width: 767px) and (orientation: portrait) {
+    header nav ul:first-of-type {
+        align-items: flex-start;
+    }
 }
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+header nav div {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #254117;
+    pointer-events: none;
 }
 
 #menu-button {
@@ -103,21 +127,20 @@ header nav ul {
 .pages {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 120px;
-    left: 0;
     padding: 0 40px 40px 40px;
     margin-right: 40px;
-    background-color: #254117;
-    width: calc(100% - 80px);
     line-height: 1.75;
+    pointer-events: auto;
 }
 
-@media(min-width: 1100px) {
+@media(min-width: 1250px) {
+    header nav div {
+        top: 40px;
+        justify-content: center;
+        background-color: transparent;
+    }
     .pages {
         flex-direction: row;
-        position: relative;
-        top: 0;
         width: auto;
         padding: 0;
         margin: 0;
@@ -215,7 +238,7 @@ section > div {
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1250px) {
     section > div {
         width: 75%;
     }
@@ -224,6 +247,9 @@ section > div {
 @media (min-width: 1600px) {
     section > div {
         width: 50%;
+    }
+    #home > div  {
+        width: 60%;
     }
 }
 
@@ -247,8 +273,14 @@ section > div {
 }
 
 #home .sun {
-    font-size: 4rem;
+    width: 3rem;
     margin: 75px;
+}
+
+@media (min-width: 767px) {
+    #home .sun {
+        width: 4rem;
+    }
 }
 
 #home div p {
@@ -278,7 +310,7 @@ section > div {
 #home .activity-details {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
 }
 
@@ -324,8 +356,10 @@ section > div {
 }
 
 .text-container h3 {
-  color: #254117;
-  text-decoration: underline;
+    color: white;
+    background-color: #254117;
+    padding: 0 10px;
+    display: inline-block;
 }
 
 .img-container img {
@@ -448,6 +482,14 @@ section > div {
     padding: 0;
 }
 
+#outlets .sun, #outlets > div li p {
+    display: inline-block;
+}
+
+#outlets > div > ul li p {
+    margin: 0;
+}
+
 #outlets > div > ul > li:not(:last-of-type) {
     margin-bottom: 40px;
 }
@@ -465,6 +507,12 @@ section > div {
 
 #landscape-container img {
     width: 100%;
+}
+
+#outlets .sun {
+    width: 1.5rem;
+    margin-right: 5px;
+    vertical-align: top;
 }
 
 
@@ -600,11 +648,15 @@ section#map:nth-of-type(2n), #credits {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .strong {
     font-weight: bold;
+}
+
+#home .sun img, #outlets .sun img {
+    width: 100%;
 }
 
 
